@@ -1,0 +1,266 @@
+[
+    {
+      "product_id": 1,
+      "title": "Dell XPS 13",
+      "image": "https://i.ibb.co.com/6RkVwqzp/notebook-g16-7630-nt-black-gallery-1.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Sleek design, Intel Core i7 processor, 16GB RAM, and 512GB SSD.",
+      "specification": {
+        "processor": "Intel Core i7 11th Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screen": "13.4-inch FHD+",
+        "battery": "Up to 12 hours",
+        "os": "Windows 11"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 2,
+      "title": "Apple iPhone 14 Pro",
+      "image": "https://i.ibb.co.com/3Y8DjxjL/images.jpg",
+      "category": "Smartphone",
+      "price": 999.00,
+      "description": "iPhone 14 Pro with A16 Bionic chip, 48MP camera, and 5G.",
+      "specification": {
+        "display": "6.1-inch Super Retina XDR",
+        "processor": "A16 Bionic Chip",
+        "camera": "48MP Main, 12MP Ultra-Wide, 12MP Telephoto",
+        "battery": "Up to 23 hours video playback",
+        "storage": ["128GB", "256GB", "512GB", "1TB"],
+        "os": "iOS 16"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 3,
+      "title": "Bose QuietComfort 45",
+      "image": "https://i.ibb.co.com/ym9HTzQC/bose.jpg",
+      "category": "Headphone",
+      "price": 329.99,
+      "description": "Noise-canceling, wireless, with 24-hour battery life.",
+      "specification": {
+        "type": "Over-Ear, Wireless",
+        "noise_cancellation": "Active Noise Cancelling",
+        "battery_life": "24 hours",
+        "bluetooth": "5.1",
+        "weight": "240g"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 4,
+      "title": "Samsung Galaxy Watch 5",
+      "image": "https://i.ibb.co.com/4wksPyFf/Watch-5.jpg",
+      "category": "Smartwatch",
+      "price": 279.99,
+      "description": "Health tracking, 40-hour battery life, with heart rate monitoring.",
+      "specification": {
+        "display": "1.4-inch Super AMOLED",
+        "sensors": ["Heart rate", "SpO2", "ECG"],
+        "battery_life": "40 hours",
+        "connectivity": ["Bluetooth", "Wi-Fi"],
+        "water_resistance": "5ATM"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 5,
+      "title": "Sony WH-1000XM5",
+      "image": "https://i.ibb.co.com/C3P9zLv7/Sony-WH-1000-XM5-Wireless-Noise-Canceling-Headphones-with-USB-Port-and-Stand-6636657c-057c-4553-a9a0.webp",
+      "category": "Headphone",
+      "price": 349.99,
+      "description": "Premium noise-canceling headphones with 30-hour battery.",
+      "specification": {
+        "type": "Over-Ear, Wireless",
+        "noise_cancellation": "Adaptive Noise Cancelling",
+        "battery_life": "30 hours",
+        "bluetooth": "5.0",
+        "weight": "250g"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 6,
+      "title": "Microsoft Surface Laptop 4",
+      "image": "https://i.ibb.co.com/tPBtkGvJ/Microsoft-15-Surface-Laptop-4-AMD-Ryzen-7-256-GB-SSD-8-GB-Model-1953-Platinum-3-700x700.webp",
+      "category": "Laptop",
+      "price": 1499.99,
+      "description": "High-performance laptop with 11th Gen Intel Core i7 and 16GB RAM.",
+      "specification": {
+        "processor": "Intel Core i7 11th Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screen": "13.5-inch PixelSense",
+        "battery": "Up to 32 hours",
+        "os": "Windows 11"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 7,
+      "title": "Apple AirPods Pro",
+      "image": "https://i.ibb.co.com/WvpXBbCZ/Apple-Air-Pods-Pro-2nd-gen-hero-220907-big-jpg-large.jpg",
+      "category": "Headphone",
+      "price": 249.00,
+      "description": "Active Noise Cancellation with a custom fit and 24-hour battery life.",
+      "specification": {
+        "type": "In-Ear, Wireless",
+        "noise_cancellation": "Active Noise Cancelling",
+        "battery_life": "24 hours",
+        "bluetooth": "5.0",
+        "weight": "5.4g"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 8,
+      "title": "Fitbit Charge 5",
+      "image": "https://i.ibb.co.com/NgfGPJ8g/Fitbit-Charge-5-Advanced-Fitness-Health-Tracker-with-Built-in-GPS-1.jpg",
+      "category": "Smartwatch",
+      "price": 179.99,
+      "description": "Advanced fitness tracker with built-in GPS, heart rate, and stress tracking.",
+      "specification": {
+        "display": "1.04-inch AMOLED",
+        "sensors": ["Heart rate", "SpO2", "ECG", "Stress tracking"],
+        "battery_life": "Up to 7 days",
+        "connectivity": ["Bluetooth"],
+        "water_resistance": "50m"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 9,
+      "title": "Razer Blade 15",
+      "image": "https://i.ibb.co.com/TqbC04q7/Razer-Blade-15.webp",
+      "category": "Laptop",
+      "price": 1999.99,
+      "description": "Gaming laptop with 16GB RAM, RTX 3070, and 15.6-inch Full HD display.",
+      "specification": {
+        "processor": "Intel Core i7 11th Gen",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "screen": "15.6-inch Full HD",
+        "battery": "Up to 8 hours",
+        "os": "Windows 11"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 10,
+      "title": "GoPro Hero 10",
+      "image": "https://i.ibb.co.com/s9307Lrv/161297-cameras-review-gopro-hero-10-black-review-image2-pibqlf4iol.jpg",
+      "category": "Camera",
+      "price": 399.99,
+      "description": "Waterproof action camera with 5.3K video and 23MP photos.",
+      "specification": {
+        "video_resolution": "5.3K",
+        "photo_resolution": "23MP",
+        "battery_life": "Up to 2.5 hours",
+        "connectivity": ["Wi-Fi", "Bluetooth"],
+        "water_resistance": "10m"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 11,
+      "title": "Google Pixel 6",
+      "image": "https://i.ibb.co.com/0VV4xx8P/google-pixel-6.jpg",
+      "category": "Smartphone",
+      "price": 599.00,
+      "description": "Smartphone with Google Tensor, 50MP camera, and 5G connectivity.",
+      "specification": {
+        "display": "6.4-inch AMOLED",
+        "processor": "Google Tensor",
+        "camera": "50MP Main, 12MP Ultra-Wide",
+        "battery": "Up to 24 hours",
+        "storage": "128GB, 256GB",
+        "os": "Android 12"
+      },
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 12,
+      "title": "Apple MacBook Air M2",
+      "image": "https://i.ibb.co.com/0yKCT8tz/macbook-air-m2.jpg",
+      "category": "Laptop",
+      "price": 1099.99,
+      "description": "Super light, with Apple M2 chip, 8GB RAM, and 256GB SSD.",
+      "specification": {
+        "processor": "Apple M2 Chip",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "screen": "13.6-inch Retina",
+        "battery": "Up to 18 hours",
+        "os": "macOS"
+      },
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 13,
+      "title": "Samsung Galaxy S22 Ultra",
+      "image": "https://i.ibb.co.com/Xky9fGp1/Samsung-Galaxy-S22-Ultra-specs-camera-display-chipset-Note-design-drd-NBC.jpg",
+      "category": "Smartphone",
+      "price": 1199.99,
+      "description": "Flagship phone with 108MP camera, 12GB RAM, and Snapdragon 8 Gen 1.",
+      "specification": {
+        "display": "6.8-inch Dynamic AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "camera": "108MP Main, 12MP Ultra-Wide, 10MP Telephoto",
+        "battery": "5000mAh",
+        "storage": "128GB, 256GB, 512GB",
+        "os": "Android 12"
+      },
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 14,
+      "title": "HP Spectre x360",
+      "image": "https://i.ibb.co.com/Nn77B0Bc/71-He6-IYBKL.jpg",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "Convertible laptop with Intel Core i7, 16GB RAM, and 512GB SSD.",
+      "specification": {
+        "processor": "Intel Core i7 11th Gen",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screen": "13.3-inch 4K OLED",
+        "battery": "Up to 14 hours",
+        "os": "Windows 11"
+      },
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 15,
+      "title": "Canon EOS R6",
+      "image": "https://i.ibb.co.com/jvZH0S5p/images-1.jpg",
+      "category": "Camera",
+      "price": 2499.99,
+      "description": "Full-frame mirrorless camera with 20FPS continuous shooting and 4K video.",
+      "specification": {
+        "sensor": "Full-frame CMOS",
+        "megapixels": "20.1MP",
+        "video_resolution": "4K at 60fps",
+        "battery_life": "Up to 510 shots",
+        "storage": "Dual SD card slots"
+      },
+      "availability": true,
+      "rating": 4.8
+    }
+  ]
+  
