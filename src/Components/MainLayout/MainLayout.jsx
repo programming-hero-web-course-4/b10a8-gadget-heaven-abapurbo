@@ -1,15 +1,18 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Header/Navbar";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";                  
+import Banner from "../Banner/Banner";
 
-const MainLayout = () => {
+const  MainLayout = () => {
     const navigate = useNavigate()
+    const location=useLocation()
     return (
         <div>
-            <div className='h-20 z-50'>
-                <Navbar></Navbar>
-            </div>
-
+           {
+            location.pathname==='/'?<div className='bg-[#9538E2] h-[600px] mt-5 mx-9  rounded-2xl text-white '><Navbar></Navbar><Banner></Banner> </div>:<div><Navbar></Navbar></div>
+           }
+            
+           
             {/* dynamic page render */}
             <div className="min-h-[calc(100vh-300px)]">
                 {

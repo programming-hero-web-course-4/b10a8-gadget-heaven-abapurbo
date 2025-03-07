@@ -5,7 +5,7 @@ import { IoHeartOutline } from "react-icons/io5";
 const Navbar = () => {
     return (
         <div>
-            <nav className=" flex justify-between items-center px-12  z-50 fixed w-full">
+            <nav className=" flex justify-between items-center px-12   ">
                 <div>
                     <h1 className="text-3xl font-semibold">Gadget Heaven</h1>
                 </div>
