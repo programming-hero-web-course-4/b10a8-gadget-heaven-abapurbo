@@ -9,7 +9,7 @@ import { useContext, useEffect, useState } from "react";
 import { getHeardCardAdd, storageAddCard } from "../../Utility/HeartToCard";
 import { StorageDataContext } from "../heardAndAddCardContext/AddCardProvider";
 
-
+import './Start.css'
 
 const ProductDetails = () => {
     const [startValue, setStartValue] = useState(0)
