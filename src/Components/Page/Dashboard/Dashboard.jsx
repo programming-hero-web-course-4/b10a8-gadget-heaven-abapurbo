@@ -5,14 +5,14 @@ export const CardContext = createContext([])
 import './cartlink.css'
 import Carts from './Carts';
 import Wishlist from './Wishlist'
-import { StorageDataContext } from '../../heardAndAddCardContext/AddCardProvider';
+
 const Dashboard = () => {
     const data = useLoaderData()
     const [isActive, setIsActive] = useState({
         cart: true,
         status: 'isActive'
     })
-   console.log(isActive.cart)
+  
     const handleIsActive = status => {
         console.log(status)
         if (status == 'cart') {
@@ -31,7 +31,10 @@ const Dashboard = () => {
     }
   
     return (
+        
         <div>
+            <DynamicTitle title={'Gadget Heaven | Dashboard'}/>
+            
             <div className='flex flex-col items-center bg-[#9538E2] h-[200px] py-5 space-y-3 text-white'>
                 <h1 className='text-3xl font-bold'>Dashboard</h1>
                 <p className='text-xl font-thin mx-62 text-center'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
@@ -51,7 +54,6 @@ const Dashboard = () => {
                 </CardContext.Provider>
 
             </div>
-            <DynamicTitle title='Dashboard page'></DynamicTitle>
         </div>
 
     );

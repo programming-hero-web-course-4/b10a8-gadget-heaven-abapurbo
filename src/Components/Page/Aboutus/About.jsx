@@ -1,6 +1,10 @@
+import DynamicTitle from "../../DynamicTitle/DynamicTitle";
+
+
 const About = () => {
     return (
         <div className="h-[900px]">
+           <DynamicTitle title={'Gadget Heaven | About'}/>
             <div className="bg-[#9538E2]  h-[250px]  ">
                 <div className="text-center space-y-3 pt-10 text-white">
                     <h1 className="text-4xl font-semibold ">About Us</h1>

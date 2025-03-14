@@ -22,7 +22,6 @@ const AddCardProvider = ({ children }) => {
     useEffect(() => {
         if (shoppingCard ==null) {
             setDisable(true)
-            console.log('soph',shoppingCard)
         }
         else if(localData==[]){
            setDisable(true)

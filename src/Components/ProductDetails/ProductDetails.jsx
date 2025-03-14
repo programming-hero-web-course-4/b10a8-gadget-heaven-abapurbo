@@ -5,14 +5,17 @@ import { CiHeart } from "react-icons/ci";
 import { addCardLocalStorage, getAddToLocalStorage } from "../../Utility/AddToCardLocalStorage";
 // import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
-import {  useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { getHeardCardAdd, storageAddCard } from "../../Utility/HeartToCard";
 import { StorageDataContext } from "../heardAndAddCardContext/AddCardProvider";
 
 
+
 const ProductDetails = () => {
-    const localData=useContext(StorageDataContext);
-    const {handleIncrement,handleHeardIconIncrement}=localData
+    const [startValue, setStartValue] = useState(0)
+    const [hover, setHover] = useState(0);
+    const localData = useContext(StorageDataContext);
+    const { handleIncrement, handleHeardIconIncrement } = localData
     const { id } = useParams()
 
     const detailsData = useLoaderData()
@@ -69,14 +72,14 @@ const ProductDetails = () => {
     })
 
     const handleLocalStorage = cardId => {
-       
+
         const checkId = getAddToLocalStorage()
         const remainingLocalCard = checkId.find(Id => Id === parseInt(cardId))
         if (remainingLocalCard) {
             error()
         }
         else {
-           
+
             handleIncrement(search.product_id)
             notify()
             addCardLocalStorage(cardId)
@@ -84,7 +87,7 @@ const ProductDetails = () => {
     }
     // add localstorageheard card
     const handleAddHeard = Id => {
-       
+
         const localHeardCard = getHeardCardAdd();
 
         const checkHeardCard = localHeardCard.find(localId => localId == Id);
@@ -129,21 +132,25 @@ const ProductDetails = () => {
 
                             </ul>
                         </div>
-                        <h1 className="flex items-center text-xl font-bold">Rating <FaRegStar className="text-orange-400 text-[16px]" /> </h1>
-                        <div className="rating rating-md">
-                            <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
-                            <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />
-                            <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="3 star" />
-                            <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="4 star" />
-                            <input type="radio" name="rating-7" className="mask mask-star-2 bg-orange-400" aria-label="5 star" />
-
+                        
+                        {/* rating start */}
+                        <h1 className="flex flex-row space-x-1 items-center text-xl font-bold">Rating<span className="fa  fa-star ml-1 text-[#FFD700]"></span> </h1>
+                        <div className="-mt-4" >
+                        
+                            {
+                                new Array(5).fill(0).map((value, index) => {
+                                    return <span key={index} className={(hover == 0 && index < startValue) || index < hover ? 'start text-2xl ' : 'text-2xl text-gray-300'} onClick={() => (setStartValue(index + 1))}
+                                        onMouseEnter={() => setHover(index + 1)}
+                                        onMouseLeave={() => setHover(0)}
+                                    >&#9733;</span>
+                                })
+                            }
+                             <button className=" bg-gray-200 ml-2 px-3 font-semibold text-gray-400 py-1 rounded-xl">{rating}</button>
                         </div>
-
-                        <button className=" bg-gray-200 ml-2 px-3 font-semibold text-gray-400 py-1 rounded-xl">{rating}</button>
                         <div className=" flex items-center space-x-3 ">
                             <button onClick={() => {
                                 handleLocalStorage(search.product_id)
-                                
+
                             }
                             } className="btn bg-[#9538E2] rounded-2xl text-white font-semibold text-xl">Add to cart <TiShoppingCart /></button>
                             <CiHeart onClick={() => handleAddHeard(search.product_id)} className="text-4xl p-1 border-1 border-gray-400 rounded-2xl" />
