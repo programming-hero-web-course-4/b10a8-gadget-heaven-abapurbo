@@ -14,7 +14,7 @@ const Banner = () => {
             {/* dynamic banner rendaring */}
             <div className='mx-36 mt-9 p-4 border-2 rounded-3xl backdrop-blur-3xl'>
                 {
-                    location.pathname === '/dashboard' ? <Dashboard></Dashboard> : <div className="bg-[url('/../src/assets/banner.jpg')] h-[460px] bg-cover bg-center object-center rounded-3xl">
+                    location.pathname === '/dashboard' ? <Dashboard></Dashboard> : <div className="bg-[url('/banner.jpg')] h-[460px] bg-cover bg-center object-center rounded-3xl">
 
                     </div>
                 }
