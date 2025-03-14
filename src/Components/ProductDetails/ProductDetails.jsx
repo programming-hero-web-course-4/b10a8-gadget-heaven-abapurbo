@@ -1,5 +1,4 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { FaRegStar } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
 import { addCardLocalStorage, getAddToLocalStorage } from "../../Utility/AddToCardLocalStorage";
@@ -12,7 +11,7 @@ import { StorageDataContext } from "../heardAndAddCardContext/AddCardProvider";
 import './Start.css'
 
 const ProductDetails = () => {
-    const [startValue, setStartValue] = useState(0)
+    const [startValue, setStartValue] = useState(4)
     const [hover, setHover] = useState(0);
     const localData = useContext(StorageDataContext);
     const { handleIncrement, handleHeardIconIncrement } = localData
